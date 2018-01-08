@@ -42,3 +42,14 @@ Route::get('/test2', function () {
 Route::get('/abc',function() {
     echo '123' ;
 }) ;
+
+Route::get('/aaa',function() {
+    echo '123' ;
+}) ;
+Route::get('/bbb',function() {
+    echo '123' ;
+}) ;
+Route::get('/ccc',function() {
+    echo '123' ;
+}) ;
+
