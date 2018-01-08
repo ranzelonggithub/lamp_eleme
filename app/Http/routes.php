@@ -31,6 +31,7 @@ Route::group(['prefix'=>'sys','namespace'=>'sys'],function(){
 	Route::get('/index','testController@test');
 	Route::get('/index','testController@test');
 	Route::get('/index','testController@test');
+	echo '1111';
 });
 
 Route::get('/test1', function () {
@@ -41,4 +42,9 @@ Route::get('/test2', function () {
 });
 Route::get('/abc',function() {
     echo '123' ;
-}) ;
+});
+
+Route::post('/index',function(){
+	return view('index');
+});
+
