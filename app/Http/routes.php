@@ -14,3 +14,18 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+//前台路由组
+Route::group(['prefix'=>'home','namespace'=>'home'],function(){
+
+});
+
+//店铺路由组
+Route::group(['prefix'=>'shop','namespace'=>'shop'],function(){
+	Route::get('/test','testController@test');
+});
+
+//系统路由组
+Route::group(['prefix'=>'sys','namespace'=>'sys'],function(){
+	
+});
