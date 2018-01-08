@@ -27,35 +27,8 @@ Route::group(['prefix'=>'shop','namespace'=>'shop'],function(){
 
 //系统路由组
 Route::group(['prefix'=>'sys','namespace'=>'sys'],function(){
-	Route::get('/index','testController@test');
-	Route::get('/index','testController@test');
-	Route::get('/index','testController@test');
-	Route::get('/index','testController@test');
-	echo '1111';
+
 });
 
-Route::get('/test1', function () {
-    return view('test1');
-});
-Route::get('/test2', function () {
-    return view('test2');
-});
-Route::get('/abc',function() {
-    echo '123' ;
-});
-
-Route::post('/index',function(){
-	return view('index');
-});
-
-Route::get('/aaa',function() {
-    echo '123' ;
-}) ;
-Route::get('/bbb',function() {
-    echo '123' ;
-}) ;
-Route::get('/ccc',function() {
-    echo '123' ;
-}) ;
 
 
