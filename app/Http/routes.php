@@ -27,7 +27,10 @@ Route::group(['prefix'=>'shop','namespace'=>'shop'],function(){
 
 //系统路由组
 Route::group(['prefix'=>'sys','namespace'=>'sys'],function(){
-	
+	Route::get('/index','testController@test');
+	Route::get('/index','testController@test');
+	Route::get('/index','testController@test');
+	Route::get('/index','testController@test');
 });
 
 Route::get('/test1', function () {
@@ -36,4 +39,3 @@ Route::get('/test1', function () {
 Route::get('/test2', function () {
     return view('test2');
 });
-
