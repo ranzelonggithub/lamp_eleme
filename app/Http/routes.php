@@ -33,3 +33,6 @@ Route::group(['prefix'=>'sys','namespace'=>'sys'],function(){
 	Route::get('/index','testController@test');
 
 });
+Route::post('/index',function(){
+	return view('index');
+});
